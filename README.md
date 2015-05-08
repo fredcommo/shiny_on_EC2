@@ -10,8 +10,8 @@ to open an app in a browser.
 
 When starting a new instance, the 'review and launch' step allows you to edit the Security Groups.
 Add the following new rules:
-	- Type: HTTP, Protocole: TCP, Port range: 80, Source: anywhere 0.0.0.0/0
-	- Type: Custom TCP rule, Protocole: TCP, Port range: 3838, Source: anywhere 0.0.0.0/0
+- Type: HTTP, Protocole: TCP, Port range: 80, Source: anywhere 0.0.0.0/0
+- Type: Custom TCP rule, Protocole: TCP, Port range: 3838, Source: anywhere 0.0.0.0/0
 
 If you missed this step, no worry!
 In the EC2 Instances page Description, click on the 'Security Groups', then:
