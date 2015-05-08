@@ -24,11 +24,11 @@ In the EC2 Instances page Description, click on the 'Security Groups', then:
 #### Change the .pem mode first
 chmod 400 \<my-key-pair.pem\>
 
-#### Push the installShiny.sh file
+#### Push the installShiny.sh file to your remote EC2 instance
 cd /myKeyFolder
 scp -i \<my-key-pair.pem\> path/to/local/installShiny.sh ubuntu@\<Public_IP\>:~
 
-#### Connect to your EC2 instance
+#### Connect to your remote EC2 instance
 ssh -i \<my-key-pair.pem\> ubuntu@\<Public_IP\>
 
 #### Change the file mode, then run
