@@ -28,6 +28,7 @@ chmod 400 \<my-key-pair.pem\>
 
 #### Push the installShiny.sh file to your remote EC2 instance
 _Note: you will find the \<Public_IP\> in the Instance Desription page._
+
 scp -i \<my-key-pair.pem\> path/to/local/installShiny.sh ubuntu@\<Public_IP\>:~  
 
 #### Connect to your remote EC2 instance
