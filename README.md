@@ -25,14 +25,14 @@ In the EC2 Instances page Description, click on the 'Security Groups', then:
 chmod 400 \<my-key-pair.pem\>
 
 #### Push the installShiny.sh file to your remote EC2 instance
-cd /myKeyFolder
+cd /myKeyFolder  
 scp -i \<my-key-pair.pem\> path/to/local/installShiny.sh ubuntu@\<Public_IP\>:~
 
 #### Connect to your remote EC2 instance
 ssh -i \<my-key-pair.pem\> ubuntu@\<Public_IP\>
 
 #### Change the file mode, then run
-chmod +x installShiny.sh
+chmod +x installShiny.sh  
 ./installShiny.sh
 
 #### Starting the server should return something like: shiny-server start/running, process <some process number>
