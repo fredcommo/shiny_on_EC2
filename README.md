@@ -1,7 +1,12 @@
 ##### Create a EC2 Ubuntu instance: aws.amazon.com/
 I don't want to go through this process. Amazon has a nice tutorial, very easy to follow.
 
-Note: ubuntu-trusty-14.04-amd64-server-20150325 (ami-47a23a30) works fine, and a t2-micro is enough for testing this.
+Note:
+ubuntu-trusty-14.04-amd64-server-20150325 (ami-47a23a30) works fine, and a t2-micro is enough for testing this.
+
+#### Opening the right ports
+By default, the shiny server uses the port 3838. You need to have the port opened on your instance to be able
+to open an app in a browser.
 
 When starting a new instance, the 'review and launch' step allows you to edit the Security Groups.
 Add the following new rules:
@@ -9,9 +14,9 @@ Add the following new rules:
 	- Type: Custom TCP rule, Protocole: TCP, Port range: 3838, Source: anywhere 0.0.0.0/0
 
 If you missed this step, no worry!
-In the EC2 Instances page Description, click on the 'Security Groups'
+In the EC2 Instances page Description, click on the 'Security Groups', then:
 - Select the 'Inboud' tab
-- Check whether ports 80 and 3838 are opened. If not, add the following rules
+- Add the following rules:
 	- Type: HTTP, Protocole: TCP, Port range: 80, Source: anywhere 0.0.0.0/0
 	- Type: Custom TCP rule, Protocole: TCP, Port range: 3838, Source: anywhere 0.0.0.0/0
 
@@ -26,7 +31,7 @@ scp -i \<my-key-pair.pem\> path/to/local/installShiny.sh ubuntu@\<Public_IP\>:~
 #### Connect to your EC2 instance
 ssh -i \<my-key-pair.pem\> ubuntu@\<Public_IP\>
 
-#### Change mode, then run
+#### Change the file mode, then run
 chmod +x installShiny.sh
 ./installShiny.sh
 
