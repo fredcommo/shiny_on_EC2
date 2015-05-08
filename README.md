@@ -13,8 +13,9 @@ Add the following new rules:
 - Type: HTTP, Protocole: TCP, Port range: 80, Source: anywhere 0.0.0.0/0
 - Type: Custom TCP rule, Protocole: TCP, Port range: 3838, Source: anywhere 0.0.0.0/0
 
-If you missed this step, no worry!
-In the EC2 Instances page Description, click on the 'Security Groups', then:
+If you missed this step, no worry!  
+You can modify the 'Security Groups' rules through the EC2 Instance page Description.  
+Click on the 'Security Groups', down your Instance Description window, then:
 - Select the 'Inboud' tab
 - Add the following rules:
 	- Type: HTTP, Protocole: TCP, Port range: 80, Source: anywhere 0.0.0.0/0
