@@ -49,4 +49,4 @@ scp -i \<my-key-pair.pem\> -r \<path/to/local/AppFolder\> ubuntu@\<Public_IP\>:/
 #### Run the app in a browser
 http://\<Public_IP\>:3838/myApp
 
-#### [An example with a very basic App](http://52.17.91.68:3838/basics/)
+#### A very trivial example running on [EC2](http://52.17.91.68:3838/basics/)
