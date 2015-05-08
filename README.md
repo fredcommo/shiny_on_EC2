@@ -43,7 +43,7 @@ sudo start shiny-server
 
 _Note: Starting the server should return something like: shiny-server start/running, process \<some process number\>_
 
-#### Back to your local machine, push your shiny app: AppFolder contains the ui.R and server.r (and any extra folder or file)
+#### Back to your local machine, push your shiny app folder, containing the ui.R and server.r (and any extra folder or file)
 scp -i \<my-key-pair.pem\> -r \<path/to/local/AppFolder\> ubuntu@\<Public_IP\>:/srv/shiny-server
 
 #### Run the app in a browser
