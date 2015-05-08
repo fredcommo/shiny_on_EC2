@@ -1,4 +1,4 @@
-##### Create a EC2 Ubuntu instance: aws.amazon.com/
+#### Create a EC2 Ubuntu instance: aws.amazon.com/
 I don't want to go through this process. Amazon has a nice tutorial, very easy to follow.
 
 Note:
