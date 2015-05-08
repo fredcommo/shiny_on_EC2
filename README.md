@@ -22,11 +22,12 @@ Click on the 'Security Groups', down your Instance Description window, then:
 	- Type: Custom TCP rule, Protocole: TCP, Port range: 3838, Source: anywhere 0.0.0.0/0
 
 
-#### Change the .pem mode first
+#### On your local machine, change the .pem mode first
+cd /myKeyFolder  
 chmod 400 \<my-key-pair.pem\>
 
 #### Push the installShiny.sh file to your remote EC2 instance
-cd /myKeyFolder  
+The \<Public_IP\> is on the Instance Desription page.  
 scp -i \<my-key-pair.pem\> path/to/local/installShiny.sh ubuntu@\<Public_IP\>:~
 
 #### Connect to your remote EC2 instance
