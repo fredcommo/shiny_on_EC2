@@ -5,7 +5,7 @@ Note:
 ubuntu-trusty-14.04-amd64-server-20150325 (ami-47a23a30) works fine, and a t2-micro is enough for testing this.
 
 #### Opening the right ports
-By default, the shiny server uses the port 3838. You need to have the port opened on your instance to be able
+By default, the shiny server uses the port 3838. You need to have that port opened on your instance to be able
 to open an app in a browser.
 
 When starting a new instance, the 'review and launch' step allows you to edit the Security Groups.
