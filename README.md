@@ -37,7 +37,8 @@ ssh -i \<my-key-pair.pem\> ubuntu@\<Public_IP\>
 chmod +x installShiny.sh  
 ./installShiny.sh
 
-#### Starting the server should return something like: shiny-server start/running, process <some process number>
+#### Start the shiny server on the remote machine
+Starting the server should return something like: shiny-server start/running, process <some process number>  
 sudo start shiny-server
 
 #### Back to your local machine, push your shiny app: AppFolder contains the ui.R and server.r (and any extra folder or file)
