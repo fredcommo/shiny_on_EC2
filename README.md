@@ -50,3 +50,4 @@ scp -i \<my-key-pair.pem\> -r \<path/to/local/AppFolder\> ubuntu@\<Public_IP\>:/
 http://\<Public_IP\>:3838/myApp
 
 #### A very trivial example running on [EC2](http://52.17.91.68:3838/basics/)
+_At least, until I kill that instance :p_
