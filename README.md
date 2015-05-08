@@ -10,7 +10,7 @@ In the EC2 Instances page Description.
 
 
 ### Change the .pem mode first
-chmod 400 <my-key-pair.pem>
+chmod 400 \<my-key-pair.pem\>
 
 ### Push the installShiny.sh file
 cd /myKeyFolder
@@ -27,7 +27,7 @@ chmod +x installShiny.sh
 sudo start shiny-server
 
 ### Back to your local machine, push your shiny app: AppFolder contains the ui.R and server.r (and any extra folder or file)
-scp -i \<my-key-pair.pem\> -r \<path/to/local/AppFolder\> ubuntu@<Public_IP>:/srv/shiny-server
+scp -i \<my-key-pair.pem\> -r \<path/to/local/AppFolder\> ubuntu@\<Public_IP\>:/srv/shiny-server
 
 ### Run the app in a browser
 http://\<Public_IP\>:3838/myApp
