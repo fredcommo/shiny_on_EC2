@@ -46,6 +46,8 @@ _Note: Starting the server should return something like: shiny-server start/runn
 #### Back to your local machine, push your shiny app folder, containing the ui.R and server.r (and any extra folder or file)
 scp -i \<my-key-pair.pem\> -r \<path/to/local/AppFolder\> ubuntu@\<Public_IP\>:/srv/shiny-server
 
+_Note: all your shinyApp folders should live in the /srv/shiny-server/ folder_
+
 #### Run the app in a browser
 http://\<Public_IP\>:3838/myApp
 
