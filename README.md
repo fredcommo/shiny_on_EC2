@@ -27,20 +27,19 @@ $ cd /myKeyFolder
 $ chmod 400 \<my-key-pair.pem\>
 
 #### Push the installUbuntu.sh file to your remote EC2 instance
-_Note: you will find the \<Public_IP\> in the Instance Desription page._
-
+_Note: you will find the \<Public_IP\> in the Instance Desription page._  
 $ scp -i \<my-key-pair.pem\> path/to/local/installUbuntu.sh ubuntu@\<Public_IP\>:~  
 
 #### Connect to your remote EC2 instance
 $ ssh -i \<my-key-pair.pem\> ubuntu@\<Public_IP\>
 
 #### Change the file mode, then run installUbuntu.sh
-_on your remote machine_
+_on your remote machine_  
 $ chmod +x installUbuntu.sh  
 $ ./installUbuntu.sh
 
 #### Start the shiny server on the remote machine
-_on your remote machine_
+_on your remote machine_  
 $ sudo start shiny-server  
 
 _Note: Starting the server should return something like: shiny-server start/running, process \<some process number\>_
