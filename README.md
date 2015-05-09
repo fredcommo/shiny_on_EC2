@@ -35,10 +35,12 @@ $ scp -i \<my-key-pair.pem\> path/to/local/installUbuntu.sh ubuntu@\<Public_IP\>
 $ ssh -i \<my-key-pair.pem\> ubuntu@\<Public_IP\>
 
 #### Change the file mode, then run installUbuntu.sh
+_on your remote machine_
 $ chmod +x installUbuntu.sh  
 $ ./installUbuntu.sh
 
 #### Start the shiny server on the remote machine
+_on your remote machine_
 $ sudo start shiny-server  
 
 _Note: Starting the server should return something like: shiny-server start/running, process \<some process number\>_
