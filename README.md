@@ -49,7 +49,7 @@ $ scp -i \<my-key-pair.pem\> -r \<path/to/local/AppFolder\> ubuntu@\<Public_IP\>
 _Note: all your shinyApp folders should live in the /srv/shiny-server/ directory_
 
 #### Run the app in a browser
-$ http://\<Public_IP\>:3838/myApp
+http://\<Public_IP\>:3838/\<myApp\>
 
 #### A very trivial example running on [EC2](http://52.17.91.68:3838/basics/)
 _At least, until I kill that instance :p_
