@@ -48,7 +48,7 @@ echo
 
 echo Installing supplementary R packages...
 sleep 2
-sudo su - -c "R -e \"install.packages(c('nplr'), repos='http://cran.univ-lyon1.fr/', lib='/usr/lib/R/library/')\""
+#sudo su - -c "R -e \"install.packages(c('pkg1', 'pkg2', ...), repos='http://cran.univ-lyon1.fr/', lib='/usr/lib/R/library/')\""
 echo
 
 echo Changing chmod 777 /srv/shiny-server/ permissions...
@@ -64,7 +64,7 @@ echo "**************************************************************************
 echo "-------------------------------------------------------------------------------"
 echo
 echo You should be able to push your Apps folders to '/srv/shiny-server/'
-echo e.g. 'scp -i <my_key_pair.pem> </myShyniApp> ubuntu@<Public_IP>:/srv/shiny-server'
+echo e.g. 'scp -i <my_key_pair.pem> <path/to/myShyniApp> ubuntu@<Public_IP>:/srv/shiny-server'
 echo
 echo "-------------------------------------------------------------------------------"
 echo "*******************************************************************************"
