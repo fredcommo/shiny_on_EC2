@@ -1,4 +1,4 @@
-####1- Create an EC2 Ubuntu [instance](aws.amazon.com/)
+####1- Create an EC2 Ubuntu [instance](https://aws.amazon.com/)
 I don't want to go through this process. Amazon has a nice [tutorial](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html), very easy to follow.
 
 _Note: ubuntu-trusty-14.04-amd64-server-20150325 (ami-47a23a30) works fine, and a t2-micro is enough for testing small apps._
