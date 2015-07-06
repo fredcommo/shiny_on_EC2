@@ -45,7 +45,7 @@ $ sudo start shiny-server
 
 _Note: Starting the server should return something like: shiny-server start/running, process \<some process number\>._
 
-####8- Back to your local machine, push your shiny app folder (ui.R, server.r, and any extra folder or file) to your remote machine
+####8- Back to your local machine, push your shiny app folder (ui.R, server.R, and any extra folder or file) to your remote machine
 $ scp -i \<my-key-pair.pem\> -r \<path/to/local/AppFolder\> ubuntu@\<Public_IP\>:/srv/shiny-server
 
 _Note: all your shinyApp folders should live in the /srv/shiny-server/ directory._
