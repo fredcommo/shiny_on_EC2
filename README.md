@@ -53,8 +53,8 @@ _Note: all your shinyApp folders should live in the /srv/shiny-server/ directory
 http://\<Public_IP\>:3838/\<myApp\>
 
 _Notes:_  
-_Public\_IP: See setp 4_  
-_'myApp': same name as 'AppFolder' used in step 8_
+_Public\_IP: see step \#4_  
+_'myApp': same name as 'AppFolder' used in step \#8_
 
 #### A very trivial example running on [EC2](http://52.17.91.68:3838/basics/)
 _Instance killed!_
