@@ -38,6 +38,8 @@ _on your remote machine_
 $ chmod +x installUbuntu.sh  
 $ ./installUbuntu.sh
 
+_Note: to install supplementary R packages, uncomment line \#51 in installUbuntu.sh, then replace 'pkg1', 'pkg2' with the package names you may need_
+
 ####7- Start the shiny server on the remote machine
 _on your remote machine_  
 $ sudo start shiny-server  
