@@ -1,5 +1,5 @@
-#### Create a EC2 Ubuntu instance: aws.amazon.com/
-I don't want to go through this process. Amazon has a nice tutorial, very easy to follow.
+#### Creating an EC2 Ubuntu instance: aws.amazon.com/
+I don't want to go through this process. Amazon has a nice [tutorial](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html), very easy to follow.
 
 Note:
 ubuntu-trusty-14.04-amd64-server-20150325 (ami-47a23a30) works fine, and a t2-micro is enough for testing this.
@@ -53,4 +53,4 @@ _Note: all your shinyApp folders should live in the /srv/shiny-server/ directory
 http://\<Public_IP\>:3838/\<myApp\>
 
 #### A very trivial example running on [EC2](http://52.17.91.68:3838/basics/)
-_At least, until I kill that instance :p_
+_Instance killed!_
